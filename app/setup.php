@@ -3,48 +3,70 @@
  * Theme setup.
  */
 
- namespace App;
+namespace App;
 
 use function WpKit\assets;
- 
+
 /**
  * Register the theme assets.
  *
  * @return void
  */
 
- /**
+/**
  * Register the theme assets.
  *
  * @return void
  */
- add_action('wp_enqueue_scripts', function() {
-    wp_enqueue_script('wpkit/vendor.js', assets('scripts/vendor.js'), ['jquery'], null, true);
-    wp_enqueue_script('wpkit/app.js', assets('scripts/app.js'), ['wpkit/vendor.js'], null, true);
+add_action( 'wp_enqueue_scripts', function () {
+    wp_enqueue_script( 'wpkit/vendor.js', assets( 'scripts/vendor.js' ), [ 'jquery' ], null, true );
+    wp_enqueue_script( 'wpkit/app.js', assets( 'scripts/app.js' ), [ 'wpkit/vendor.js' ], null, true );
 
-    wp_enqueue_style('wpkit/app.css', assets('styles/app.css'), false, null);
+    wp_add_inline_script( 'wpkit/vendor.js', assets( 'scripts/manifest.js' ), 'before' );
 
- }, 100);
+    if ( is_single() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
 
- add_action('after_setup_theme', function(){
+    wp_enqueue_style( 'wpkit/app.css', assets( 'styles/app.css' ), false, null );
 
- }, 20);
+}, 100 );
 
- add_action('widgets_init', function(){
+/**
+ * Register the theme assets with the block editor.
+ *
+ * @return void
+ */
+add_action( 'enqueue_block_editor_assets', function () {
+    if ( $manifest = assets( 'scripts/manifest.asset.php' ) ) {
+        // wp_enqueue_script( 'wpkit/vendor.js', assets( 'scripts/vendor.js' ), ...array_values( $manifest ) );
+        wp_enqueue_script( 'wpkit/editor.js', assets( 'scripts/editor.js' ), '', null, true );
+
+        wp_add_inline_script( 'wpkit/vendor.js', assets( 'scripts/manifest.js' ), 'before' );
+    }
+
+    wp_enqueue_style( 'wpkit/editor.css', assets( 'styles/editor.css' ), false, null );
+}, 100 );
+
+add_action( 'after_setup_theme', function () {
+
+}, 20 );
+
+add_action( 'widgets_init', function () {
     $config = [
         'before_widget' => '<section class="widget %1$s %2$s">',
-        'after_widget' => '</section>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
+        'after_widget'  => '</section>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>'
     ];
 
-    register_sidebar([
-        'name' => __('Primary', 'wpkit'),
-        'id' => 'sidebar-primary'
-    ] + $config);
+    register_sidebar( [
+                          'name' => __( 'Primary', 'wpkit' ),
+                          'id'   => 'sidebar-primary'
+                      ] + $config );
 
-    register_sidebar([
-        'name' => __('Footer', 'wpkit'),
-        'id' => 'sidebar-footer'
-    ] + $config);
- });
+    register_sidebar( [
+                          'name' => __( 'Footer', 'wpkit' ),
+                          'id'   => 'sidebar-footer'
+                      ] + $config );
+} );
