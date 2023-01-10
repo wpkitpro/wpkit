@@ -12,18 +12,21 @@
  *
  * @return void
  */
-function collect( array $files ) {
-    foreach ( $files as &$file ) {
-        $file = sprintf('app/%s.php', $file);
-    }
+if ( ! function_exists( 'collect' ) ) {
+    function collect( array $files ) {
+        foreach ( $files as &$file ) {
+            $file = sprintf( 'app/%s.php', $file );
+        }
 
-    if ( ! locate_template( $files, true, true ) ) {
-        wp_die(
-        /* translators: %s is replaced with the relative file path */
-            sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $files )
-        );
+        if ( ! locate_template( $files, true, true ) ) {
+            wp_die(
+            /* translators: %s is replaced with the relative file path */
+                sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $files )
+            );
+        }
     }
 }
+
 
 /**
  * --------------------------------------------------------------------------
