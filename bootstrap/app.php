@@ -54,17 +54,3 @@ if ( ! locate_template( $assets = 'config/assets.php', true, true ) ) {
         sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $assets )
     );
 }
-
-//if ( ! locate_template( $view = 'config/view.php', true, true ) ) {
-//    wp_die(
-//    /* translators: %s is replaced with the relative file path */
-//        sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $view )
-//    );
-//}
-
-if ( ! locate_template( $global = 'config/global.php', true, true ) ) {
-    wp_die(
-    /* translators: %s is replaced with the relative file path */
-        sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $global )
-    );
-}
