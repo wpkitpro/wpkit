@@ -8,10 +8,8 @@
  * theme. Simply add (or remove) files from the array below to change what
  * is registered alongside WpKit.
  *
- * @param array $files
- *
- * @return void
  */
+
 if ( ! function_exists( 'collect' ) ) {
     function collect( array $files ) {
         foreach ( $files as &$file ) {
@@ -50,11 +48,23 @@ if ( ! function_exists( 'collect' ) ) {
  * assets: key-value pairs to match assets to their revved counterparts
  *
  */
-if ( ! locate_template( $config = "config/assets.php", true, true ) ) {
+if ( ! locate_template( $assets = 'config/assets.php', true, true ) ) {
     wp_die(
     /* translators: %s is replaced with the relative file path */
-        sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $config )
+        sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $assets )
     );
 }
 
+if ( ! locate_template( $view = 'config/view.php', true, true ) ) {
+    wp_die(
+    /* translators: %s is replaced with the relative file path */
+        sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $view )
+    );
+}
 
+if ( ! locate_template( $global = 'config/global.php', true, true ) ) {
+    wp_die(
+    /* translators: %s is replaced with the relative file path */
+        sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $global )
+    );
+}

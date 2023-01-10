@@ -1,42 +1,42 @@
 {
-    "name": "gik/wpkit",
-    "description": "WordPress starter theme with a modern development workflow",
-    "type": "wordpress-theme",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Garegin Hakobyan",
-            "email": "garik.28h@gmail.com",
-            "homepage": "https://gikwp.com"
-        }
-    ],
-    "keywords": [
-        "wordpress"
-    ],
-    "support": {
-        "issues": "https://github.com/gikwp/wpkit/issues"
-    },
-    "autoload": {
-        "psr-4": {
-            "WpKit\\": "app/"
-        }
-    },
-    "require": {
-        "php": "^7.4|^8.0"
-    },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "3.7.1"
-    },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "lint": [
-            "phpcs --extensions=php --standard=PSR12 app"
-        ]
+  "name": "gik/wpkit",
+  "description": "WordPress starter theme with a modern development workflow",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Garegin Hakobyan",
+      "email": "garik.28h@gmail.com",
+      "homepage": "https://gikwp.com"
     }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/gikwp/wpkit/issues"
+  },
+  "autoload": {
+    "psr-4": {
+      "WpKit\\": "app/"
+    }
+  },
+  "require": {
+    "php": "^7.4|^8.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.7.1"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "lint": [
+      "phpcs --extensions=php --standard=PSR12 app"
+    ]
+  }
 }
