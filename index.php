@@ -11,9 +11,7 @@
     <?php wp_body_open(); ?>
     <?php do_action('get_header') ?>
 
-    <div id="app">
-        Index
-    </div>
+    <div id="app"></div>
 
     <?php do_action('get_footer') ?>
     <?php wp_footer(); ?>
