@@ -16,7 +16,7 @@ if ( ! function_exists( 'collect' ) ) {
             $file = sprintf( 'app/%s.php', $file );
         }
 
-        if ( ! locate_template( $files, true, true ) ) {
+        if ( ! locate_template( $files, true ) ) {
             wp_die(
             /* translators: %s is replaced with the relative file path */
                 sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $files )
