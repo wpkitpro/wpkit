@@ -19,10 +19,7 @@ use function WpKit\asset;
  * @return void
  */
 add_action( 'wp_enqueue_scripts', function () {
-    wp_enqueue_script( 'wpkit/vendor.js', asset( 'scripts/vendor.js' ), [ 'jquery' ], null, true );
-    wp_enqueue_script( 'wpkit/app.js', asset( 'scripts/app.js' ), [ 'wpkit/vendor.js' ], null, true );
-
-    wp_add_inline_script( 'wpkit/vendor.js', asset( 'scripts/manifest.js' ), 'before' );
+    wp_enqueue_script( 'wpkit/app.js', asset( 'scripts/app.js' ), [ 'jquery' ], null, true );
 
     if ( is_single() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
@@ -37,13 +34,7 @@ add_action( 'wp_enqueue_scripts', function () {
  * @return void
  */
 add_action( 'enqueue_block_editor_assets', function () {
-    if ( $manifest = asset( 'scripts/manifest.asset.php' ) ) {
-        // wp_enqueue_script( 'wpkit/vendor.js', asset( 'scripts/vendor.js' ), ...array_values( $manifest ) );
-        wp_enqueue_script( 'wpkit/editor.js', asset( 'scripts/editor.js' ), '', null, true );
-
-        wp_add_inline_script( 'wpkit/vendor.js', asset( 'scripts/manifest.js' ), 'before' );
-    }
-
+    wp_enqueue_script( 'wpkit/editor.js', asset( 'scripts/editor.js' ), '', null, true );
     wp_enqueue_style( 'wpkit/editor.css', asset( 'styles/editor.css' ), false, null );
 }, 100 );
 
