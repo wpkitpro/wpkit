@@ -1,3 +1,5 @@
+## v1.0.1-dev: January 11th, 2023
+* develop by @garikhg in https://github.com/gikwp/wpkit/pull/5
 ## What's Changed
 * Add a new version v1.0.1-dev
 * Develop by @garikhg in https://github.com/gikwp/wpkit/pull/1
