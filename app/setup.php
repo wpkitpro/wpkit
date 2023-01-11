@@ -5,13 +5,13 @@
 
 namespace App;
 
-use function WpKit\asset;
-
 /**
  * Register the theme asset.
  *
  * @return void
  */
+
+use function WpKit\asset;
 
 /**
  * Register the theme asset.
