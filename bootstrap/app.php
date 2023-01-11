@@ -16,7 +16,7 @@ if ( ! function_exists( 'collect' ) ) {
             $file = sprintf( 'app/%s.php', $file );
         }
 
-        if ( ! locate_template( $files, true, true ) ) {
+        if ( ! locate_template( $files, true ) ) {
             wp_die(
             /* translators: %s is replaced with the relative file path */
                 sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $files )
@@ -24,7 +24,6 @@ if ( ! function_exists( 'collect' ) ) {
         }
     }
 }
-
 
 /**
  * --------------------------------------------------------------------------
@@ -48,23 +47,6 @@ if ( ! function_exists( 'collect' ) ) {
  * assets: key-value pairs to match assets to their revved counterparts
  *
  */
-if ( ! locate_template( $assets = 'config/assets.php', true, true ) ) {
-    wp_die(
-    /* translators: %s is replaced with the relative file path */
-        sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $assets )
-    );
-}
 
-if ( ! locate_template( $view = 'config/view.php', true, true ) ) {
-    wp_die(
-    /* translators: %s is replaced with the relative file path */
-        sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $view )
-    );
-}
-
-if ( ! locate_template( $global = 'config/global.php', true, true ) ) {
-    wp_die(
-    /* translators: %s is replaced with the relative file path */
-        sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $global )
-    );
-}
+require_once get_template_directory() . '/config/globals.php';
+require_once get_template_directory() . '/config/helpers.php';
