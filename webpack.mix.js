@@ -15,7 +15,7 @@ require('@tinypixelco/laravel-mix-wp-blocks');
 
 mix
     .setPublicPath('./public')
-    .browserSync('wpkit.test');
+    .browserSync('wpkit.local');
 
 mix
     .sass('resources/styles/app.scss', 'styles')
