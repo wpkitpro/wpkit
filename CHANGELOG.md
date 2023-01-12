@@ -1,5 +1,10 @@
+## v1.0.2-dev.2: January 12th, 2023
+* [Release notes](https://github.com/gikwp/wpkit/releases/tag/v1.0.2-dev.2)
+* [Full changelog](https://github.com/gikwp/wpkit/compare/v1.0.1-dev...v1.0.2-dev.2)
+
 ## v1.0.1-dev: January 11th, 2023
-* develop by @garikhg in https://github.com/gikwp/wpkit/pull/5
+* [Release notes](https://github.com/gikwp/wpkit/releases/tag/v1.0.1-dev)
+
 ## What's Changed
 * Add a new version v1.0.1-dev
 * Develop by @garikhg in https://github.com/gikwp/wpkit/pull/1
