@@ -31,11 +31,11 @@ function collect( $file_names ) {
  * don't have to worry about manually loading any of our classes later on.
  *
  */
-// if(! file_exists($composer = __DIR__ . '/vendor/autoload.php') ) {
-//     wp_die(__('Error locating autoloader. Please run <code>composer install</code>.', 'WpKit'));
-// }
-//
-// require $composer;
+if ( ! file_exists( $composer = TEMPLATEPATH . '/vendor/autoload.php' ) ) {
+    wp_die( __( 'Error locating autoloader. Please run <code>composer install</code>.', 'WpKit' ) );
+}
+
+require $composer;
 
 /**
  * --------------------------------------------------------------------------
