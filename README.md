@@ -18,6 +18,6 @@ without proper financial support. If you have the opportunity, [consider sponsor
 <div align="center">
 <a href="https://gikwp.com/"><img src="https://gikwp.com/cdn/gk-logo.svg" width="148" height="111" alt="WpKit" /></a>
 <a href="https://github.com/gikwp/wpkit"><img src="https://gikwp.com/cdn/wk-logo.svg" width="148" height="111" alt="WpKit" /></a>
-<img src="https://gikwp.com/cdn/wi-logo.svg" width="148" height="111" alt="WPI" />
-<img src="https://gikwp.com/cdn/wo-logo.svg" width="148" height="111" alt="Woop" />
+<span><img src="https://gikwp.com/cdn/wi-logo.svg" width="148" height="111" alt="WPI" /></span>
+<span><img src="https://gikwp.com/cdn/wo-logo.svg" width="148" height="111" alt="Woop" /></span>
 </div>
