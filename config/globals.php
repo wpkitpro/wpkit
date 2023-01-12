@@ -3,7 +3,6 @@
  * Application Functions
  */
 
-
 if ( ! function_exists( 'asset' ) ) {
     function asset( ...$args ) {
         return \WpKit\asset( ...$args );
