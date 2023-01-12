@@ -3,7 +3,7 @@
     <div class="container">
       <?php if ( get_bloginfo( 'name' ) ): ?>
         <a href="<?= esc_url( home_url( '/' ) ) ?>" class="navbar-brand">
-          <img src="<?php echo esc_attr( asset('images/logo.svg') ); ?>" alt="<?php bloginfo( 'name' ); ?>" />
+          <img src="<?php echo esc_attr( asset( 'images/logo.svg' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>"/>
           <span class="visually-hidden"><?php bloginfo( 'name' ); ?></span>
         </a>
       <?php endif; ?>
@@ -21,15 +21,14 @@
         </button>
         <div class="collapse navbar-collapse" id="primaryNavigation">
           <?php wp_nav_menu( [
-            'theme_location'  => 'primary_navigation',
-            'menu_class'      => 'navbar-nav me-auto mb-2 mb-lg-0',
-            'container_class' => 'collapse navbar-collapse',
-            'container_id'    => 'primaryNavigation',
-            'items_wrap'      => '<ul id="primary-menu-list" class="%2$s">%3$s</ul>',
-            'fallback_cb'     => false,
+            'theme_location' => 'primary_navigation',
+            'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0',
+            'container'      => false,
+            'items_wrap'     => '<ul id="primary-menu-list" class="%2$s">%3$s</ul>',
+            'fallback_cb'    => false,
           ] ); ?>
 
-          <?php wk_template('forms/searchform'); ?>
+          <?php wk_template( 'forms/searchform' ); ?>
         </div>
       <?php endif; ?>
     </div>
