@@ -10,17 +10,14 @@
  *
  */
 
-if ( ! function_exists( 'collect' ) ) {
-    function collect( array $files ) {
-        foreach ( $files as &$file ) {
-            $file = sprintf( 'app/%s.php', $file );
+function collect( $file_names ) {
+    foreach ( (array) $file_names as $file_name ) {
+        if ( ! $file_name ) {
+            continue;
         }
 
-        if ( ! locate_template( $files, true ) ) {
-            wp_die(
-            /* translators: %s is replaced with the relative file path */
-                sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'wpkit' ), $files )
-            );
+        if ( file_exists( TEMPLATEPATH . "/app/{$file_name}.php" ) ) {
+            require_once TEMPLATEPATH . "/app/{$file_name}.php";
         }
     }
 }
