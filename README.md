@@ -24,3 +24,8 @@ ___
 <a href="#"><img src="https://gikwp.com/cdn/wi-logo.svg" width="148" height="111" alt="WPI" /></a>
 <a href="#"><img src="https://gikwp.com/cdn/wo-logo.svg" width="148" height="111" alt="Woop" /></a>
 </div>
+
+### Theme installation
+
+### Theme structure
+
