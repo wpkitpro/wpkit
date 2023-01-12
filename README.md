@@ -4,7 +4,7 @@ ___
 
 ### Sponsors
 
-**GikWp** is an open source project and is completely free to use.
+**Gik** is an open source project and is completely free to use.
 
 However, the amount of effort needed to support and develop new features and products within Gik cannot be sustained
 without proper financial support. If you have the
