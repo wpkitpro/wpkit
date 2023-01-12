@@ -3,7 +3,8 @@
     <div class="container">
       <?php if ( get_bloginfo( 'name' ) ): ?>
         <a href="<?= esc_url( home_url( '/' ) ) ?>" class="navbar-brand">
-          <?php bloginfo( 'name' ); ?>
+          <img src="<?php echo esc_attr( asset('images/logo.svg') ); ?>" alt="<?php bloginfo( 'name' ); ?>" />
+          <span class="visually-hidden"><?php bloginfo( 'name' ); ?></span>
         </a>
       <?php endif; ?>
 
