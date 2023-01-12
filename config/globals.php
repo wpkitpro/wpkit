@@ -15,3 +15,16 @@ if ( ! function_exists( 'wk_template' ) ) {
         return \WpKit\wk_template( ...$args );
     }
 }
+
+/**
+ * Calculate classes for the main <html> element.
+ *
+ * @return void
+ */
+function wk_the_html_classes() {
+    $classes = apply_filters( 'wpkit_html_classes', '' );
+    if ( ! $classes ) {
+        return;
+    }
+    echo 'class="' . esc_attr( $classes ) . '"';
+}
