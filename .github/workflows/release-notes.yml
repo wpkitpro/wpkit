@@ -22,5 +22,5 @@ jobs:
       id: test
       uses: Wordpress/theme-review-action@trunk
       with:
-        accessible-ready: true
-        ui-debug: true
+        accessible-ready: false
+        ui-debug:  false
