@@ -1570,6 +1570,13 @@
     json2php "^0.0.5"
     webpack-sources "^3.2.2"
 
+"@wordpress/dom-ready@^3.24.0":
+  version "3.24.0"
+  resolved "https://registry.yarnpkg.com/@wordpress/dom-ready/-/dom-ready-3.24.0.tgz#ee3dcfb1b99cb8ed2ecf06e1311a09b8e07e2d44"
+  integrity sha512-535dMEHVpVYCTb99DVsSCqAAjzwLzbm4AnNV9uDHPpCTBqmeR14DHl9NDvC5h1eI5Exi/qRh1/W9PWYUqkO1pw==
+  dependencies:
+    "@babel/runtime" "^7.16.0"
+
 "@wordpress/element@^5.1.0":
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@wordpress/element/-/element-5.1.0.tgz#d7081d5a89acb91d18ad3f8c16dfb8017d21a280"
