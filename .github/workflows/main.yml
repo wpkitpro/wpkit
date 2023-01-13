@@ -76,4 +76,4 @@ jobs:
           restore-keys: ${{ runner.os }}-${{ matrix.php }}-composer-
 
       - name: Install Composer dependencies
-        run: composer install --no-progress --prefer-dist --optimize-autoloader --no-suggest
+        run: composer install --no-progress --prefer-dist --autoloader --no-suggest
