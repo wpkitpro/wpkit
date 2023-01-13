@@ -17,7 +17,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Gikwp\\Wpkit\\": "app/"
+      "Wpkit\\": "app/"
     }
   },
   "config": {
@@ -33,9 +33,4 @@
   ],
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "scripts": {
-    "lint": [
-      "phpcs --extensions=php --standard=PSR12 app"
-    ]
-  }
 }
