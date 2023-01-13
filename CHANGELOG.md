@@ -1,8 +1,7 @@
 ## v1.0.3-dev.4: January 13th, 2023
 
 * [Release notes](https://github.com/gikwp/wpkit/releases/tag/v1.0.3-dev.4)
-* [Full changelog](https://github.com/gikwp/wpkit/compare/v1.0.2-dev.3...v1.0.3-dev.4)
-*
+* [Full changelog](https://github.com/gikwp/wpkit/compare/v1.0.3-dev.3...v1.0.3-dev.4)
 
 ## v1.0.3-dev.3: January 12th, 2023
 
