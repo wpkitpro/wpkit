@@ -1,4 +1,6 @@
 <?php
 /**
- * Theme helper
+ * Theme helper.
  */
+
+namespace App;
