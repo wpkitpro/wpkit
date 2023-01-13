@@ -1,29 +1,25 @@
-on: [push]
+name: "tagged-release"
+
+on:
+  push:
+    tags:
+      - "v*"
 
 jobs:
-  versioning_job:
-    runs-on: ubuntu-latest
-    name: RainMachine Parsers versioning
+  tagged-release:
+    name: "Tagged Release"
+    runs-on: "ubuntu-latest"
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Automatic Versioning
-        uses: nicupavel/action-files-version-increment@v3
-      - name: Get the output time
-        run: echo "The time was ${{ steps.versioning_job.outputs.time }}"
-      - name: Get list of modified files
-        run: echo "Modified files ${{ steps.versioning_job.outputs.modified_files }}"
-      - id: commit_if_modified
-        name: Commit metadata file
-        if: steps.versioning_job.outputs.modified_files
+      # ...
+      - name: "Build & test"
         run: |
-          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git config --local user.name "$GITHUB_ACTOR"
-          git commit -am "Versioning for ${{ steps.versioning_job.outputs.modified_files }}"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+          echo "done!"
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.head_ref }}
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            LICENSE.txt
+            *.jar
