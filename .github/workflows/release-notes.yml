@@ -1,23 +1,26 @@
-name: Release notes
+name: Test My Theme
 
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    branches: [ main ] ## Change the branch name to match yours
+  pull_request:
+    branches: [ main ] ## Change the branch name to match yours
 
-permissions:
-  contents: read
 
 jobs:
-  update_release_draft:
-    permissions:
-      # allow release-drafter/release-drafter to create GitHub releases and add labels to PRs
-      contents: write
-      pull-requests: write
+  run_tests:
     runs-on: ubuntu-latest
-    if: github.repository == 'gikwp/wpkit'
+
     steps:
-      - uses: release-drafter/release-drafter@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    ## We need to keep this around until Gutenberg 9.6 is launched.
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '16'
+
+    - name: Theme Test
+      id: test
+      uses: Wordpress/theme-review-action@trunk
+      with:
+        accessible-ready: true
+        ui-debug: true
