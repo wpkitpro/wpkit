@@ -34,7 +34,7 @@ $ composer create-project gikwp/wpkit your-theme-name
 To install the latest development version of WpKit, add dev-main to the end of the command:
 
 ``` 
-$ composer require gikwp/wpkit dev-main
+$ composer create-project gikwp/wpkit dev-main
 ```
 
 ## Theme setup
