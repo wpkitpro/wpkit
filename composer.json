@@ -2,6 +2,13 @@
   "name": "gikwp/wpkit",
   "description": "WordPress starter theme with a modern development workflow.",
   "type": "wordpress-theme",
+  "keywords": [
+    "wordpress",
+    "wordpress-theme"
+  ],
+  "support": {
+    "issues": "https://github.com/gikwp/wpkit/issues"
+  },
   "require": {
     "php": "^7.4|^8.0"
   },
@@ -30,9 +37,6 @@
   "config": {
     "optimize-autoloader": true,
     "preferred-install": "dist",
-    "sort-packages": true,
-    "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": false
-    }
+    "sort-packages": true
   }
 }
