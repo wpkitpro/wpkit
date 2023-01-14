@@ -6,13 +6,12 @@
     "php": "^7.4|^8.0"
   },
   "require-dev": {
-    "filp/whoops": "^2.14",
     "squizlabs/php_codesniffer": "3.7.1"
   },
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Gikwp\\Wpkit\\": "app/"
+      "Wpkit\\": "app/"
     }
   },
   "authors": [
@@ -21,5 +20,19 @@
       "email": "garik.28h@gmail.com"
     }
   ],
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "lint": [
+      "phpcs --extensions=php --standard=PSR12 app config"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": false
+    }
+  }
 }
