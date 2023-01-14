@@ -1,4 +1,5 @@
 <?php
+
 /**
  * --------------------------------------------------------------------------
  * Register WpKit Theme Files
@@ -20,7 +21,7 @@ require_once __DIR__ . '/bootstrap/app.php';
  * is registered alongside WpKit.
  *
  */
-collect( [ 'setup', 'filters', 'helper' ] );
+collect(['setup', 'filters']);
 
 /**
  * --------------------------------------------------------------------------
@@ -32,4 +33,4 @@ collect( [ 'setup', 'filters', 'helper' ] );
  * for WpKit when booting.
  *
  */
-add_theme_support( 'wpkit' );
+add_theme_support('wpkit');
