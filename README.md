@@ -21,6 +21,28 @@ opportunity, [consider sponsoring Gik](https://github.com/sponsors/gikwp)
 <a href="#"><img src="https://gikwp.com/cdn/wo-logo.svg" width="148" height="111" alt="Woop" /></a>
 </div>
 
+## Features
+
+* Clean, efficient theme templating.
+* **[Laravel Mix](https://laravel-mix.com/)** an elegant wrapper around Webpack for the 80% use case.
+* Built-in the most popular and convenient CSS/JS framework **[Bootstrap](https://getbootstrap.com/)**.
+
+## Requirements
+
+* [WordPress](https://wordpress.org/) >= 5.9
+* [PHP](https://www.php.net/manual/en/install.php) >= 7.4.0 (
+  with [``php-mbstring``](https://www.php.net/manual/en/book.mbstring.php) enabled)
+* [Composer](https://getcomposer.org/download/)
+* [Node.js](https://nodejs.org/en/) >= 16
+* [Yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable)
+
+## Packages
+
+* [jQuery](https://jquery.com/) = v3.5.1
+* [Bootstrap](https://getbootstrap.com/) = v5.3.0-alpha1
+* [Popper](https://popper.js.org/) = v2.11.6
+* [Laravel Mix](https://laravel-mix.com/) = v6.0.49
+
 ## Theme installation
 
 Install WpKit using Composer from your WordPress themes directory (replace your-theme-name below with the name of your
@@ -28,13 +50,21 @@ theme):
 
 ``` 
 # @ wp-content/themes/
-$ composer create-project gikwp/wpkit your-theme-name
+$ git clone https://github.com/gikwp/wpkit.git your-theme-name
+```
+
+Don't forgot **remove ``.git``**
+
+```
+# cd your-theme-name directory
+$ rm -rf .git
 ```
 
 To install the latest development version of WpKit, add ``dev-main`` to the end of the command:
 
 ``` 
-$ composer create-project gikwp/wpkit dev-main
+$ git clone https://github.com/gikwp/wpkit.git dev-main
+$ cd dev-main rm -rf .git
 ```
 
 ## Theme setup
