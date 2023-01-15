@@ -53,7 +53,7 @@ theme):
 $ git clone https://github.com/gikwp/wpkit.git your-theme-name
 ```
 
-Don't forgot **remove ``.git``**
+Don't forget **remove ``.git``**
 
 ```
 # cd your-theme-name directory
