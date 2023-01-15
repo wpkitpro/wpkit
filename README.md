@@ -1,10 +1,10 @@
 <p align="center">
-<img alt="WpKit" src="https://gikwp.com/cdn/wpkit-theme-logo.svg" height="42" />
+<a href="https://github.com/gikwp/wpkit/tree/develop"><img alt="WpKit" src="https://gikwp.com/cdn/wpkit-theme-logo.svg" height="42" /></a>
 </p>
 
 <p align="center">
-<img alt="wpkit" src="https://img.shields.io/github/license/gikwp/wpkit?color=%23525ddc&style=flat-square">
-<img alt="wpkit" src="https://img.shields.io/github/release/gikwp/wpkit?color=%23525ddc&style=flat-square">
+<a href="https://github.com/gikwp/wpkit/blob/develop/LICENSE.md"><img alt="wpkit" src="https://img.shields.io/github/license/gikwp/wpkit?color=%23525ddc&style=flat-square"></a>
+<a href="https://github.com/gikwp/wpkit/releases"><img alt="wpkit" src="https://img.shields.io/github/release/gikwp/wpkit?color=%23525ddc&style=flat-square"></a>
 </p>
 
 ## Sponsors
