@@ -1,4 +1,11 @@
-## WpKit
+<p align="center">
+<img alt="WpKit" src="https://gikwp.com/cdn/wpkit-theme-logo.svg" height="42" />
+</p>
+
+<p align="center">
+<img alt="wpkit" src="https://img.shields.io/github/license/gikwp/wpkit?color=%23525ddc&style=flat-square">
+<img alt="wpkit" src="https://img.shields.io/github/release/gikwp/wpkit?color=%23525ddc&style=flat-square">
+</p>
 
 ## Sponsors
 
