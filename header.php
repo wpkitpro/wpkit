@@ -13,4 +13,4 @@
 
     <?php wk_template('sections/header') ?>
 
-    <main id="main" class="content-area">
+    <main id="main" class="container content-area">
