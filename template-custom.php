@@ -2,14 +2,12 @@
 /**
  * Template Name: Custom Template
  */
-?>
-<?php get_header(); ?>
 
-<?php if ( have_posts() ): ?>
-	<?php while ( have_posts() ) { the_post();
-		wk_template('partials/page', 'header');
-		wk_template('partials/content', 'page');
-	} ?>
-<?php endif; ?>
+get_header();
 
-<?php get_footer(); ?>
+while ( have_posts() ) { the_post();
+  wk_template( 'partials/page', 'header' );
+  wk_template( 'partials/content', 'page' );
+}
+
+get_footer();
