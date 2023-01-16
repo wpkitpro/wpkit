@@ -89,3 +89,4 @@ sidebars.
 * ``yarn start`` — Compile assets when file changes are made, start Browsersync session
 * ``yarn build`` — Compile and optimize the files in your assets directory
 * ``yarn build:production`` — Compile assets for production
+
