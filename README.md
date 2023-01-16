@@ -1,4 +1,11 @@
-## WpKit
+<p align="center">
+<a href="https://github.com/gikwp/wpkit/tree/develop"><img alt="WpKit" src="https://gikwp.com/cdn/wpkit-theme-logo.svg" height="42" /></a>
+</p>
+
+<p align="center">
+<a href="https://github.com/gikwp/wpkit/blob/develop/LICENSE.md"><img alt="wpkit" src="https://img.shields.io/github/license/gikwp/wpkit?color=%23525ddc&style=flat-square"></a>
+<a href="https://github.com/gikwp/wpkit/releases"><img alt="wpkit" src="https://img.shields.io/github/release/gikwp/wpkit?color=%23525ddc&style=flat-square"></a>
+</p>
 
 ## Sponsors
 
@@ -38,10 +45,10 @@ opportunity, [consider sponsoring Gik](https://github.com/sponsors/gikwp)
 
 ## Packages
 
-* [jQuery](https://jquery.com/) = v3.5.1
-* [Bootstrap](https://getbootstrap.com/) = v5.3.0-alpha1
-* [Popper](https://popper.js.org/) = v2.11.6
-* [Laravel Mix](https://laravel-mix.com/) = v6.0.49
+* [jQuery](https://jquery.com/): v3.5.1
+* [Bootstrap](https://getbootstrap.com/): v5.3.0-alpha1
+* [Popper](https://popper.js.org/): v2.11.6
+* [Laravel Mix](https://laravel-mix.com/): v6.0.49
 
 ## Theme installation
 

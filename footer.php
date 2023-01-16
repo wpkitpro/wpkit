@@ -1,6 +1,6 @@
 </main><!-- #main -->
 
-<?php wk_template('sections/footer') ?>
+<?php wk_template( 'sections/footer' ); ?>
 </div><!-- #app -->
 
 <?php wp_footer(); ?>
