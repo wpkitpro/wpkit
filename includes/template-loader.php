@@ -23,7 +23,7 @@ if ( wp_using_themes() ) {
 		'single',
 		'singular',
 		'tag',
-		'taxonomy'
+		'taxonomy',
 	];
 	
 	// Add Filter
@@ -34,6 +34,11 @@ if ( wp_using_themes() ) {
 	function prefix_template_hierarchy( $templates ) {
 		$template_dir = 'resources/views';
 		$type         = str_replace( '_template_hierarchy', '', current_filter() );
+		
+		// add `taxonomy.php` file after last `category.php` and `tag.php` element.
+		if ( in_array( $type, [ 'category', 'tag' ] ) ) {
+			$templates[] = 'taxonomy.php';
+		}
 		
 		foreach ( $templates as $key => $template ) {
 			if ( ! str_starts_with( $template, $template_dir ) ) {
