@@ -4,6 +4,10 @@
  */
 
 get_header();
-echo 'page template';
+
+while ( have_posts() ) { the_post();
+  wk_template( 'partials/page', 'header' );
+  wk_template( 'partials/content', 'page' );
+}
 
 get_footer();
