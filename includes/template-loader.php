@@ -3,20 +3,44 @@
  * Loads the correct template based on the visitor's url
  */
 
-$types = [
-	'404',
-	'frontpage',
-	'page',
-];
-
-foreach ( $types as $type ) {
-	add_filter( "{$type}_template_hierarchy", "prefix_template_hierarchy", 20 );
-}
-
-function prefix_template_hierarchy( $templates ) {
-	echo '<pre>';
-	print_r( $templates );
-	echo '</pre>';
+if ( wp_using_themes() ) {
+	// Template types
+	$types = [
+		'404',
+		'archive',
+		'attachment',
+		'author',
+		'category',
+		'date',
+		'embed',
+		'frontpage',
+		'home',
+		// 'index',
+		'page',
+		'paged',
+		'privacypolicy',
+		'search',
+		'single',
+		'singular',
+		'tag',
+		'taxonomy'
+	];
 	
-	return $templates;
+	// Add Filter
+	foreach ( $types as $type ) {
+		add_filter( "{$type}_template_hierarchy", "prefix_template_hierarchy", 20 );
+	}
+	
+	function prefix_template_hierarchy( $templates ) {
+		$template_dir = 'resources/views';
+		$type         = str_replace( '_template_hierarchy', '', current_filter() );
+		
+		foreach ( $templates as $key => $template ) {
+			if ( ! str_starts_with( $template, $template_dir ) ) {
+				$templates[ $key ] = "{$template_dir}/$template";
+			}
+		}
+		
+		return $templates;
+	}
 }
