@@ -11,6 +11,6 @@ namespace App;
  *
  * @return string
  */
-add_filter('excerpt_more', function () {
-    return sprintf(' &hellip; <a href="%s">%s</a>', get_permalink(), __('Read more', 'wpkit'));
-});
+add_filter( 'excerpt_more', function () {
+	return sprintf( ' &hellip; <a href="%s">%s</a>', get_permalink(), __( 'Read more', 'wpkit' ) );
+} );

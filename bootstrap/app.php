@@ -47,3 +47,4 @@ require $composer;
 
 require_once get_template_directory() . '/config/globals.php';
 require_once get_template_directory() . '/config/helpers.php';
+require_once get_template_directory() . '/includes/template-loader.php';
