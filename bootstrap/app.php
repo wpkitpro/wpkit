@@ -39,12 +39,12 @@ require $composer;
 
 /**
  * --------------------------------------------------------------------------
- * Register WpKit Theme Configuration
+ * Register WpKit theme settings.
  * --------------------------------------------------------------------------
- * assets: key-value pairs to match assets to their revved counterparts
  *
  */
 
-require_once get_template_directory() . '/config/globals.php';
-require_once get_template_directory() . '/config/helpers.php';
-require_once get_template_directory() . '/includes/template-loader.php';
+require_once get_template_directory() . '/includes/settings.php';
+
+
+
