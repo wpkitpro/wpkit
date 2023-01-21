@@ -11,15 +11,15 @@
  */
 
 function collect( $file_names ) {
-    foreach ( (array) $file_names as $file_name ) {
-        if ( ! $file_name ) {
-            continue;
-        }
-
-        if ( file_exists( TEMPLATEPATH . "/app/{$file_name}.php" ) ) {
-            require_once TEMPLATEPATH . "/app/{$file_name}.php";
-        }
-    }
+	foreach ( (array) $file_names as $file_name ) {
+		if ( ! $file_name ) {
+			continue;
+		}
+		
+		if ( file_exists( TEMPLATEPATH . "/app/{$file_name}.php" ) ) {
+			require_once TEMPLATEPATH . "/app/{$file_name}.php";
+		}
+	}
 }
 
 /**
@@ -32,7 +32,7 @@ function collect( $file_names ) {
  *
  */
 if ( ! file_exists( $composer = TEMPLATEPATH . '/vendor/autoload.php' ) ) {
-    wp_die( __( 'Error locating autoloader. Please run <code>composer install</code>.', 'WpKit' ) );
+	wp_die( __( 'Error locating autoloader. Please run <code>composer install</code>.', 'WpKit' ) );
 }
 
 require $composer;
@@ -45,5 +45,9 @@ require $composer;
  *
  */
 
-require_once get_template_directory() . '/config/globals.php';
-require_once get_template_directory() . '/config/helpers.php';
+define( 'WKINC', get_template_directory() . '/includes' );
+define( 'WKCONF', get_template_directory() . '/config' );
+
+require_once WKCONF . '/globals.php';
+require_once WKCONF . '/helpers.php';
+require_once WKINC . '/template-loader.php';
