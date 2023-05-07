@@ -21,7 +21,7 @@ require_once __DIR__ . '/bootstrap/app.php';
  * is registered alongside WpKit.
  *
  */
-collect( [ 'setup', 'filters' ] );
+collect( [ 'setup', 'filters', 'theme-functions' ] );
 
 /**
  * --------------------------------------------------------------------------
