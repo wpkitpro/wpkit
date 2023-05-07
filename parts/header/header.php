@@ -28,7 +28,7 @@
             'fallback_cb'    => false,
           ] ); ?>
 
-          <?php wk_template( 'forms/searchform' ); ?>
+          <?php get_template_part( 'parts/forms/searchform' ); ?>
         </div>
       <?php endif; ?>
     </div>
