@@ -11,22 +11,14 @@ namespace App;
  *
  * @return void
  */
-
-use function WpKit\asset;
-
-/**
- * Register the theme asset.
- *
- * @return void
- */
 add_action( 'wp_enqueue_scripts', function () {
-  wp_enqueue_script( 'wpkit-app', asset( '/script/script.js' ), [ 'jquery' ], null, true );
+  wp_enqueue_script( 'wpkit-script', get_template_directory_uri() . '/assets/scripts/script.js', [ 'jquery' ], null, true );
 
   if ( is_single() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
   }
 
-  wp_enqueue_style( 'wpkit-app', asset( 'styles/app.css' ), false, null );
+  //wp_enqueue_style( 'wpkit-style', asset( 'styles/app.css' ), false, null );
 }, 100 );
 
 /**
@@ -35,8 +27,8 @@ add_action( 'wp_enqueue_scripts', function () {
  * @return void
  */
 add_action( 'enqueue_block_editor_assets', function () {
-  wp_enqueue_script( 'wpkit-editor', asset( '/script/editor.js' ), '', null, true );
-  wp_enqueue_style( 'wpkit-editor', asset( '/css/editor.css' ), false, null );
+//  wp_enqueue_script( 'wpkit-editor', asset( '/script/editor.js' ), '', null, true );
+//  wp_enqueue_style( 'wpkit-editor', asset( '/css/editor.css' ), false, null );
 }, 100 );
 
 /**
