@@ -1,5 +1,3 @@
-</main><!-- #main -->
-
 <?php get_template_part( 'parts/footer/site-footer' ); ?>
 </div><!-- #app -->
 
