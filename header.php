@@ -11,6 +11,6 @@
 <div id="app">
   <a class="visually-hidden-focusable" href="#main"><?php esc_html_e( 'Skip to content', 'wpkit' ); ?></a>
 
-  <?php get_template_part( 'parts/header/header' ); ?>
+  <?php get_template_part( 'parts/header/site-header' ); ?>
 
   <main id="main" class="container content-area">
