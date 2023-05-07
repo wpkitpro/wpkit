@@ -19,25 +19,25 @@ use function WpKit\asset;
  *
  * @return void
  */
-add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_script('wpkit/app.js', asset('scripts/app.js'), ['jquery'], null, true);
+add_action( 'wp_enqueue_scripts', function () {
+  wp_enqueue_script( 'wpkit-app', asset( '/script/script.js' ), [ 'jquery' ], null, true );
 
-    if (is_single() && comments_open() && get_option('thread_comments')) {
-        wp_enqueue_script('comment-reply');
-    }
+  if ( is_single() && comments_open() && get_option( 'thread_comments' ) ) {
+    wp_enqueue_script( 'comment-reply' );
+  }
 
-    wp_enqueue_style('wpkit/app.css', asset('styles/app.css'), false, null);
-}, 100);
+  wp_enqueue_style( 'wpkit-app', asset( 'styles/app.css' ), false, null );
+}, 100 );
 
 /**
  * Register the theme asset with the block editor.
  *
  * @return void
  */
-add_action('enqueue_block_editor_assets', function () {
-    wp_enqueue_script('wpkit/editor.js', asset('scripts/editor.js'), '', null, true);
-    wp_enqueue_style('wpkit/editor.css', asset('styles/editor.css'), false, null);
-}, 100);
+add_action( 'enqueue_block_editor_assets', function () {
+  wp_enqueue_script( 'wpkit-editor', asset( '/script/editor.js' ), '', null, true );
+  wp_enqueue_style( 'wpkit-editor', asset( '/css/editor.css' ), false, null );
+}, 100 );
 
 /**
  * Register the initial theme setup.

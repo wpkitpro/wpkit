@@ -2,15 +2,17 @@
 
 namespace WpKit;
 
-/**
- * Get asset from custom path
- *
- * @param  string  $asset
- * @return string
- */
-function asset(string $asset)
-{
-    return get_theme_file_uri("/public/$asset");
+if ( ! function_exists( 'asset' ) ) {
+  /**
+   * Get asset from custom path
+   *
+   * @param string $path
+   *
+   * @return string
+   */
+  function asset( string $path ) {
+    return get_template_directory_uri() . "/assets/{$path}";
+  }
 }
 
 /**
