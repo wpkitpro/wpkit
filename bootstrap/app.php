@@ -11,15 +11,19 @@
  */
 
 function collect( $file_names ) {
-    foreach ( (array) $file_names as $file_name ) {
-        if ( ! $file_name ) {
-            continue;
-        }
-
-        if ( file_exists( TEMPLATEPATH . "/app/{$file_name}.php" ) ) {
-            require_once TEMPLATEPATH . "/app/{$file_name}.php";
-        }
+  foreach ( (array) $file_names as $file_name ) {
+    if ( ! $file_name ) {
+      continue;
     }
+
+    if ( file_exists( TEMPLATEPATH . "/app/{$file_name}.php" ) ) {
+      require_once TEMPLATEPATH . "/app/{$file_name}.php";
+    } elseif ( file_exists( TEMPLATEPATH . "/app/includes/{$file_name}.php" ) ) {
+      require_once TEMPLATEPATH . "/app/includes/{$file_name}.php";
+    } elseif ( file_exists( TEMPLATEPATH . "/app/classes/{$file_name}.php" ) ) {
+      require_once TEMPLATEPATH . "/app/classes/{$file_name}.php";
+    }
+  }
 }
 
 /**
