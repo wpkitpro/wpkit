@@ -8,7 +8,7 @@
         </a>
       <?php endif; ?>
 
-      <?php if ( has_nav_menu( 'primary_navigation' ) ): ?>
+      <?php if ( has_nav_menu( 'primary' ) ): ?>
         <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
@@ -21,8 +21,8 @@
         </button>
         <div class="collapse navbar-collapse" id="primaryNavigation">
           <?php wp_nav_menu( [
-            'theme_location' => 'primary_navigation',
-            'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0',
+            'theme_location' => 'primary',
+            'menu_class'     => 'navbar-nav me-auto mb-2 mb-lg-0 gap-3',
             'container'      => false,
             'items_wrap'     => '<ul id="primary-menu-list" class="%2$s">%3$s</ul>',
             'fallback_cb'    => false,
