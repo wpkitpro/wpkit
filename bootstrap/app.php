@@ -32,19 +32,7 @@ function collect( $file_names ) {
  *
  */
 if ( ! file_exists( $composer = TEMPLATEPATH . '/vendor/autoload.php' ) ) {
-    wp_die( __( 'Error locating autoloader. Please run <code>composer install</code>.', 'WpKit' ) );
+  wp_die( __( 'Error locating autoloader. Please run <code>composer install</code>.', 'WpKit' ) );
 }
 
 require $composer;
-
-/**
- * --------------------------------------------------------------------------
- * Register WpKit theme settings.
- * --------------------------------------------------------------------------
- *
- */
-
-require_once get_template_directory() . '/includes/settings.php';
-
-
-
