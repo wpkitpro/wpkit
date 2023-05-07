@@ -1,4 +1,4 @@
 /* global setTimeout */
 wp.domReady( function() {
-  console.log('global setTimeout');
+  // console.log('global setTimeout');
 } );

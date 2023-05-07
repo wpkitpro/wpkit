@@ -1,5 +1,5 @@
 /* global wpkitGetHexLum */
 
 (function () {
-  console.log('wpkitGetHexLum');
+  // console.log('wpkitGetHexLum');
 }());
