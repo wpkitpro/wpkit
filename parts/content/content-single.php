@@ -2,7 +2,7 @@
   <header class="entry-header">
     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-    <?php wk_template( 'partials/entry-meta' ); ?>
+    <?php get_template_part( 'parts/content/entry-meta' ); ?>
   </header>
 
   <div class="entry-content">
