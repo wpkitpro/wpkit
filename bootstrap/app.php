@@ -11,15 +11,19 @@
  */
 
 function collect( $file_names ) {
-    foreach ( (array) $file_names as $file_name ) {
-        if ( ! $file_name ) {
-            continue;
-        }
-
-        if ( file_exists( TEMPLATEPATH . "/app/{$file_name}.php" ) ) {
-            require_once TEMPLATEPATH . "/app/{$file_name}.php";
-        }
+  foreach ( (array) $file_names as $file_name ) {
+    if ( ! $file_name ) {
+      continue;
     }
+
+    if ( file_exists( TEMPLATEPATH . "/app/{$file_name}.php" ) ) {
+      require_once TEMPLATEPATH . "/app/{$file_name}.php";
+    } elseif ( file_exists( TEMPLATEPATH . "/app/includes/{$file_name}.php" ) ) {
+      require_once TEMPLATEPATH . "/app/includes/{$file_name}.php";
+    } elseif ( file_exists( TEMPLATEPATH . "/app/classes/{$file_name}.php" ) ) {
+      require_once TEMPLATEPATH . "/app/classes/{$file_name}.php";
+    }
+  }
 }
 
 /**
@@ -32,19 +36,7 @@ function collect( $file_names ) {
  *
  */
 if ( ! file_exists( $composer = TEMPLATEPATH . '/vendor/autoload.php' ) ) {
-    wp_die( __( 'Error locating autoloader. Please run <code>composer install</code>.', 'WpKit' ) );
+  wp_die( __( 'Error locating autoloader. Please run <code>composer install</code>.', 'WpKit' ) );
 }
 
 require $composer;
-
-/**
- * --------------------------------------------------------------------------
- * Register WpKit Theme Configuration
- * --------------------------------------------------------------------------
- * assets: key-value pairs to match assets to their revved counterparts
- *
- */
-
-require_once get_template_directory() . '/config/globals.php';
-require_once get_template_directory() . '/config/helpers.php';
-require_once get_template_directory() . '/includes/template-loader.php';

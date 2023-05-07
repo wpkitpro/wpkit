@@ -4,7 +4,7 @@
   "description": "WordPress starter theme with a modern development workflow",
   "repository": "https://github.com/gikwp/wpkit",
   "author": "gik",
-  "license": "MIT",
+  "license": "GNU General Public License v2 or later",
   "private": true,
   "browserslist": [
     "extends @wordpress/browserslist-config"

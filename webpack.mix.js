@@ -1,4 +1,4 @@
-const { copyDirectory } = require('laravel-mix');
+const {copyDirectory} = require('laravel-mix');
 const mix = require('laravel-mix');
 require('@tinypixelco/laravel-mix-wp-blocks');
 
@@ -14,26 +14,16 @@ require('@tinypixelco/laravel-mix-wp-blocks');
  */
 
 mix
-    .setPublicPath('./public')
-    .browserSync('wpkit.local');
+  .setPublicPath('./assets')
+  .browserSync('wpkit.local');
 
 mix
-    .sass('resources/styles/app.scss', 'styles')
-    .sass('resources/styles/editor.scss', 'styles')
-    .options({
-        processCssUrls: false,
-    });
+  .sass('assets/sass/app.scss', 'assets/css')
+  .sass('assets/sass/editor.scss', 'assets/css')
+  .options({
+    processCssUrls: false,
+  });
 
 mix
-    .js('resources/scripts/app.js', 'scripts')
-    .js('resources/scripts/customizer.js', 'scripts')
-    .blocks('resources/scripts/editor.js', 'scripts')
-    .autoload({ jquery: ['$', 'window.jQuery'] });
-
-mix
-    .copyDirectory('resources/images', 'public/images')
-    .copyDirectory('resources/fonts', 'public/fonts');
-
-mix
-    .sourceMaps()
-    .version();
+  .sourceMaps()
+  .version();

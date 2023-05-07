@@ -1,5 +1,5 @@
 <!doctype html>
-<html <?php language_attributes(); ?> <?php wk_the_html_classes(); ?>>
+<html <?php language_attributes(); ?> <?php wpkit_html_classes(); ?>>
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -11,6 +11,6 @@
 <div id="app">
   <a class="visually-hidden-focusable" href="#main"><?php esc_html_e( 'Skip to content', 'wpkit' ); ?></a>
 
-  <?php wk_template( 'sections/header' ); ?>
+  <?php  get_template_part( 'parts/header/site-header' ); ?>
 
   <main id="main" class="container content-area">

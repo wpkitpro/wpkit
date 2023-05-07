@@ -9,15 +9,15 @@ get_header();
 ?>
 
 <?php if ( have_posts() ): ?>
-    <header class="page-header">
-        <h1 class="page-title">
-			<?php echo __( 'Search Results', 'wpkit' ); ?>
-        </h1>
-    </header>
-	
-	<?php wk_template( 'partials/content', 'search' ); ?>
+  <header class="page-header">
+    <h1 class="page-title">
+      <?php echo __( 'Search Results', 'wpkit' ); ?>
+    </h1>
+  </header>
+
+  <?php get_template_part( 'parts/content/content-search' ); ?>
 <?php else: ?>
-	<?php wk_template( 'partials/content', 'none' ); ?>
+  <?php get_template_part( 'parts/content/content-none' ); ?>
 <?php endif; ?>
 
 <?php get_footer(); ?>
