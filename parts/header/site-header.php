@@ -1,10 +1,19 @@
+<?php
+/**
+ * Displays the site header.
+ */
+
+$blog_name = get_bloginfo( 'name' );
+$nav_brand = get_theme_file_uri( '/assets/images/logo.svg' );
+?>
+<pre><?php print_r( $nav_brand ) ?></pre>
 <header class="banner mb-4">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-      <?php if ( get_bloginfo( 'name' ) ): ?>
+      <?php if ( $blog_name ): ?>
         <a href="<?= esc_url( home_url( '/' ) ) ?>" class="navbar-brand">
-          <img src="<?php echo esc_attr( asset( 'images/logo.svg' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>"/>
-          <span class="visually-hidden"><?php bloginfo( 'name' ); ?></span>
+          <img src="<?php echo esc_attr( $nav_brand ); ?>" alt="<?php echo esc_attr( $blog_name ); ?>"/>
+          <span class="visually-hidden"><?php echo esc_html( $blog_name ); ?></span>
         </a>
       <?php endif; ?>
 
