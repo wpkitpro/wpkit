@@ -20,10 +20,10 @@ if ( ! function_exists( 'asset' ) ) {
  *
  * @param $slug
  * @param $name
- * @param  array  $args
+ * @param array $args
+ *
  * @return false|null
  */
-function wk_template($slug, $name = null, array $args = [])
-{
-    return get_template_part("resources/views/$slug", $name, $args);
+function wk_template( $slug, $name = null, array $args = [] ) {
+  return get_template_part( "resources/views/$slug", $name, $args );
 }
