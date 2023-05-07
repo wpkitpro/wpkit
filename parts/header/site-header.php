@@ -6,7 +6,6 @@
 $blog_name = get_bloginfo( 'name' );
 $nav_brand = get_theme_file_uri( '/assets/images/logo.svg' );
 ?>
-<pre><?php print_r( $nav_brand ) ?></pre>
 <header class="banner mb-4">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
