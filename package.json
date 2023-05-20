@@ -1,6 +1,6 @@
 {
   "name": "wpkit",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "WordPress starter theme with a modern development workflow",
   "repository": "https://github.com/gikwp/wpkit",
   "author": "gik",
@@ -34,7 +34,7 @@
     "@wordpress/dependency-extraction-webpack-plugin": "^4.7.0",
     "@wordpress/dom-ready": "^3.24.0",
     "babel-eslint": "^10.1.0",
-    "bootstrap": "5.3.0-alpha1",
+    "bootstrap": "5.3.0-alpha3",
     "browser-sync": "^2.27.11",
     "browser-sync-webpack-plugin": "^2.3.0",
     "eslint": "^8.31.0",
@@ -44,10 +44,11 @@
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "stylelint": "^14.16.1",
-    "stylelint-config-standard": "^29.0.0",
-    "stylelint-config-twbs-bootstrap": "^7.0.0"
+    "stylelint-config-recommended-scss": "^11.0.0",
+    "stylelint-config-standard": "^29.0.0"
   },
   "peerDependencies": {
     "jquery": "^3.5.1"
-  }
+  },
+  "dependencies": {}
 }
