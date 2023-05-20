@@ -16,12 +16,10 @@ function collect( $file_names ) {
       continue;
     }
 
-    if ( file_exists( TEMPLATEPATH . "/app/{$file_name}.php" ) ) {
-      require_once TEMPLATEPATH . "/app/{$file_name}.php";
-    } elseif ( file_exists( TEMPLATEPATH . "/app/includes/{$file_name}.php" ) ) {
-      require_once TEMPLATEPATH . "/app/includes/{$file_name}.php";
-    } elseif ( file_exists( TEMPLATEPATH . "/app/classes/{$file_name}.php" ) ) {
-      require_once TEMPLATEPATH . "/app/classes/{$file_name}.php";
+    if ( file_exists( TEMPLATEPATH . "/inc/{$file_name}.php" ) ) {
+      require_once TEMPLATEPATH . "/inc/{$file_name}.php";
+    } elseif ( file_exists( TEMPLATEPATH . "/classes/{$file_name}.php" ) ) {
+      require_once TEMPLATEPATH . "/classes/{$file_name}.php";
     }
   }
 }
