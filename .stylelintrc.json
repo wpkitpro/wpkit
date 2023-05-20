@@ -1,6 +1,6 @@
 {
   "extends": [
-    "stylelint-config-twbs-bootstrap"
+    "stylelint-config-recommended-scss"
   ],
   "rules": {
     "declaration-colon-newline-after": null,
