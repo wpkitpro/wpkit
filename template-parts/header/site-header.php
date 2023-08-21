@@ -10,8 +10,7 @@ $blog_name = get_bloginfo( 'name' );
     <div class="container">
       <?php if ( $blog_name ): ?>
         <a href="<?= esc_url( home_url( '/' ) ) ?>" class="navbar-brand">
-          <img src="<?php echo esc_attr( $nav_brand ); ?>" alt="<?php echo esc_attr( $blog_name ); ?>"/>
-          <span class="visually-hidden"><?php echo esc_html( $blog_name ); ?></span>
+        <?php echo esc_html( $blog_name ); ?>
         </a>
       <?php endif; ?>
 
