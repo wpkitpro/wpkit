@@ -36,7 +36,7 @@ $nav_brand = get_theme_file_uri( '/assets/images/logo.svg' );
             'fallback_cb'    => false,
           ] ); ?>
 
-          <?php get_template_part( 'parts/forms/searchform' ); ?>
+          <?php get_template_part( 'template-parts/forms/searchform' ); ?>
         </div>
       <?php endif; ?>
     </div>

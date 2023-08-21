@@ -16,7 +16,7 @@
 // Start Loop
 while ( have_posts() ) {
   the_post();
-  get_template_part( 'parts/content/content-excerpt', get_post_format() );
+  get_template_part( 'template-parts/content/content-excerpt', get_post_format() );
 } // End Loop
 
 echo get_the_post_navigation();
