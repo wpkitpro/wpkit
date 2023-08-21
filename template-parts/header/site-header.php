@@ -5,7 +5,7 @@
 
 $blog_name = get_bloginfo( 'name' );
 ?>
-<header id="masthead" class="banner mb-4">
+<header id="masthead" class="banner">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
       <?php if ( $blog_name ): ?>
