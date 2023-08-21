@@ -4,10 +4,15 @@
  */
 
 get_header();
+?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <header class="entry-header">
+    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+  </header>
 
-while ( have_posts() ) {
-  the_post();
-  get_template_part( 'template-parts/content/content-single' );
-}
+  <div class="entry-content">
+    <?php the_content(); ?>
+  </div>
+</article>
 
-get_footer();
+<?php get_footer(); ?>
