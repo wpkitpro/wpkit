@@ -1,5 +1,9 @@
-<?php get_template_part( 'template-parts/footer/site-footer' ); ?>
-</div><!-- #app -->
+</main><!-- #main -->
+
+<footer id="colophon" class="container">
+  <?php dynamic_sidebar('sidebar-footer') ?>
+</footer>
+</div><!-- #page -->
 
 <?php wp_footer(); ?>
 
