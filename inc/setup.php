@@ -12,13 +12,13 @@ namespace App;
  * @return void
  */
 add_action( 'wp_enqueue_scripts', function () {
-  wp_enqueue_script( 'wpkit-script', get_template_directory_uri() . '/assets/js/script.js', [ 'jquery' ], null, true );
+  wp_enqueue_script( 'wpkit-script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '', true );
 
   if ( is_single() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
   }
 
-  wp_enqueue_style( 'wpkit-style', get_template_directory_uri() . '/assets/css/app.css', false, null );
+  wp_enqueue_style( 'wpkit-style', get_template_directory_uri() . '/assets/css/style.css' );
 }, 100 );
 
 /**
@@ -27,8 +27,8 @@ add_action( 'wp_enqueue_scripts', function () {
  * @return void
  */
 add_action( 'enqueue_block_editor_assets', function () {
-  wp_enqueue_script( 'wpkit-editor', get_template_directory_uri() . '/assets/js/editor.js', '', null, true );
-  wp_enqueue_style( 'wpkit-editor', get_template_directory_uri() . '/assets/css/editor.css', false, null );
+  wp_enqueue_script( 'wpkit-editor', get_template_directory_uri() . '/assets/js/editor.js', array(), '', true );
+  wp_enqueue_style( 'wpkit-style-editor', get_template_directory_uri() . '/assets/css/style-editor.css');
 }, 100 );
 
 /**
