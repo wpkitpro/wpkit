@@ -37,7 +37,7 @@ opportunity, [consider sponsoring Gik](https://github.com/sponsors/gikwp)
 ## Requirements
 
 * [WordPress](https://wordpress.org/) >= 5.9
-* [PHP](https://www.php.net/manual/en/install.php) >= 8.0 (
+* [PHP](https://www.php.net/manual/en/install.php) >= 7.4 (
   with [``php-mbstring``](https://www.php.net/manual/en/book.mbstring.php) enabled)
 * [Composer](https://getcomposer.org/download/)
 * [Node.js](https://nodejs.org/en/) >= 16
@@ -46,7 +46,7 @@ opportunity, [consider sponsoring Gik](https://github.com/sponsors/gikwp)
 ## Packages
 
 * [jQuery](https://jquery.com/): v3.5.1
-* [Bootstrap](https://getbootstrap.com/): v5.3.0-alpha3
+* [Bootstrap](https://getbootstrap.com/): v5.3.1
 * [Popper](https://popper.js.org/): v2.11.6
 * [Laravel Mix](https://laravel-mix.com/): v6.0.49
 
