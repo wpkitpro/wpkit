@@ -18,8 +18,8 @@ mix
   .browserSync('wpkit.local');
 
 mix
-  .sass('assets/sass/app.scss', 'assets/css')
-  .sass('assets/sass/editor.scss', 'assets/css')
+  .sass('assets/sass/style.scss', 'assets/css')
+  .sass('assets/sass/style-editor.scss', 'assets/css')
   .options({
     processCssUrls: false,
   });
