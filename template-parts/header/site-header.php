@@ -4,9 +4,8 @@
  */
 
 $blog_name = get_bloginfo( 'name' );
-$nav_brand = get_theme_file_uri( '/assets/images/logo.svg' );
 ?>
-<header class="banner mb-4">
+<header id="masthead" class="banner mb-4">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
       <?php if ( $blog_name ): ?>
@@ -17,8 +16,7 @@ $nav_brand = get_theme_file_uri( '/assets/images/logo.svg' );
       <?php endif; ?>
 
       <?php if ( has_nav_menu( 'primary' ) ): ?>
-        <button class="navbar-toggler"
-                type="button"
+        <button class="navbar-toggler"  type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#primaryNavigation"
                 aria-controls="primaryNavigation"
@@ -34,7 +32,8 @@ $nav_brand = get_theme_file_uri( '/assets/images/logo.svg' );
             'container'      => false,
             'items_wrap'     => '<ul id="primary-menu-list" class="%2$s">%3$s</ul>',
             'fallback_cb'    => false,
-          ] ); ?>
+          ] ); 
+          ?>
 
           <?php get_template_part( 'template-parts/forms/searchform' ); ?>
         </div>
