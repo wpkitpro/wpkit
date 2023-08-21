@@ -8,7 +8,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="app">
+<div id="page" class="site-page">
   <a class="visually-hidden-focusable" href="#main"><?php esc_html_e( 'Skip to content', 'wpkit' ); ?></a>
 
   <?php  get_template_part( 'template-parts/header/site-header' ); ?>
