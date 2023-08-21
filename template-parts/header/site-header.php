@@ -33,8 +33,6 @@ $blog_name = get_bloginfo( 'name' );
             'fallback_cb'    => false,
           ] ); 
           ?>
-
-          <?php get_template_part( 'template-parts/forms/searchform' ); ?>
         </div>
       <?php endif; ?>
     </div>
