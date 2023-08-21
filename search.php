@@ -15,9 +15,9 @@ get_header();
     </h1>
   </header>
 
-  <?php get_template_part( 'parts/content/content-search' ); ?>
+  <?php get_template_part( 'template-parts/content/content-search' ); ?>
 <?php else: ?>
-  <?php get_template_part( 'parts/content/content-none' ); ?>
+  <?php get_template_part( 'template-parts/content/content-none' ); ?>
 <?php endif; ?>
 
 <?php get_footer(); ?>

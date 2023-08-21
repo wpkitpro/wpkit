@@ -1,15 +1,20 @@
 <?php
+/**
+ * Template functions and definitions
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
 
 /**
- * --------------------------------------------------------------------------
- * Register WpKit Theme Files
- * --------------------------------------------------------------------------
- * Once we have the theme booted, we can handle the incoming request using
- * the application's HTTP kernel. Then, we will send the response back
- * to this client's browser, allowing them to enjoy our application.
- *
+ * Define Constants
  */
-require_once __DIR__ . '/bootstrap/app.php';
+define( 'WPKIT_THEME_VERSION', wp_get_theme()->get( 'Version' ) );
+define( 'WPKIT_THEME_NAME', wp_get_theme()->get( 'Name' ) );
+define( 'WPKIT_THEME_SETTINGS', 'wpkit-settings' );
+define( 'WPKIT_THEME_DIR', trailingslashit( get_template_directory() ) );
+define( 'WPKIT_THEME_URI', trailingslashit( esc_url( get_template_directory_uri() ) ) );
 
 /**
  * --------------------------------------------------------------------------
