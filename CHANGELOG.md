@@ -1,4 +1,9 @@
-## v2.0.0: Aug 21th, 2023
+## v2.0.1: Aug 22nd, 2023
+
+* [Release notes](https://github.com/gikwp/wpkit/releases/tag/v2.0.1)
+* [Full changelog](https://github.com/gikwp/wpkit/compare/v2.0.0...v2.0.1)
+
+## v2.0.0: Aug 21st, 2023
 
 * [Release notes](https://github.com/gikwp/wpkit/releases/tag/v2.0.0)
 * [Full changelog](https://github.com/gikwp/wpkit/compare/v2.0.0-experimental.5...v2.0.0)
@@ -23,7 +28,7 @@
 * [Release notes](https://github.com/gikwp/wpkit/releases/tag/v2.0.0-experimental.2)
 * [Full changelog](https://github.com/gikwp/wpkit/compare/v2.0.0-experimental.1...v2.0.0-experimental.2)
  
-## v2.0.0-experimental.1: January 21th, 2023
+## v2.0.0-experimental.1: January 21st, 2023
 
 * [Release notes](https://github.com/gikwp/wpkit/releases/tag/v2.0.0-experimental.1)
 * [Full changelog](https://github.com/gikwp/wpkit/compare/v1.0.5...v2.0.0-experimental.1)
