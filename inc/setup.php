@@ -4,7 +4,9 @@
  * Theme setup.
  */
 
-namespace App;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 /**
  * Register the theme asset.
