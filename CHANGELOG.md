@@ -1,5 +1,5 @@
 
-## v2.0.1: Aug 23rd, 2023
+## v2.0.2: Aug 23rd, 2023
 
 * [Release notes](https://github.com/gikwp/wpkit/releases/tag/v2.0.2)
 * [Full changelog](https://github.com/gikwp/wpkit/compare/v2.0.1...v2.0.2)
