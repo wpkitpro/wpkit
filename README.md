@@ -8,22 +8,6 @@ WpKit is a versatile and comprehensive WordPress theme designed to be your ultim
 websites. With an array of features and a user-friendly design, WpKit empowers developers and designers to create unique, responsive, and
 high-performance WordPress sites.
 
-## Key Features
-
-### Intuitive Customization
-
-Tailor WpKit to your project's unique needs with an intuitive customization interface. From color schemes to layout options, WpKit puts the
-power of design in your hands.
-
-### Seamless Integration with WordPress Plugins
-WpKit seamlessly integrates with popular WordPress plugins, enhancing functionality and ensuring compatibility with a wide range of
-third-party tools.
-
-### Responsive and Mobile-Ready
-
-WpKit is built with responsiveness in mind, ensuring your website looks impeccable on devices of all sizes. Your audience will enjoy a
-consistent and delightful browsing experience.
-
 ## Getting Started
 
 ### Theme installation
