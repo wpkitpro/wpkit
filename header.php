@@ -17,9 +17,11 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site-page">
-	<a class="visually-hidden-focusable" href="#main"><?php esc_html_e( 'Skip to content', 'wpkit' ); ?></a>
 
-	<?php get_template_part( 'template-parts/header/site-header' ); ?>
+<a class="visually-hidden-focusable" href="#content">
+	<?php esc_html_e( 'Skip to content', 'wpkit' ); ?>
+</a>
 
-	<main id="main" class="container content-area">
+<?php get_template_part('template-parts/header') ?>
+<div id="content" class="site-content">
+
