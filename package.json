@@ -10,7 +10,7 @@
 		"build:dev": "concurrently \"grunt default\" \"webpack --env=development\"",
 		"build:dev:watch": "concurrently \"grunt default watch\" \"webpack --env=local\"",
 		"clean:build": "rimraf build && rimraf wpkit",
-		"zip": "npm run clean:build && npm run build:prod && mv build wp-kit-elementor && zip -r wp-kit-elementor.$npm_package_version.zip wpkit/*"
+		"zip": "npm run clean:build && npm run build:prod && mv build wpkit && zip -r wpkit.$npm_package_version.zip wpkit/*"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.23.7",
