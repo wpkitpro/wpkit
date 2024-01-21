@@ -1,6 +1,6 @@
 === WpKit ===
 
-Contributors: wpkit
+Contributors: WpKit
 Requires at least: 6.4
 Tested up to: 6.4.2
 Requires PHP: 7.4
@@ -17,7 +17,7 @@ high-performance WordPress sites.
 
 == Copyright ==
 
-WpKit WordPress Theme, (C) 2023 wpkit.pro
+WpKit WordPress Theme, (C) 2023 WpKit.pro
 WpKit is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
@@ -33,4 +33,32 @@ GNU General Public License for more details.
 == Changelog ==
 
 = 3.0.0 - 2024-01-21 =
-Update: license and restructure readme files in WpKit theme
+New: Add .browserslistrc file to WpKit theme
+New: Rearrange JavaScript files and add bootstrap in WpKit theme
+New: Add .prettierrc configuration file to WpKit theme
+New: Rename and rewrite Webpack configuration for WpKit theme
+New: Add Gruntfile.js for WpKit theme
+New: Add .eslintignore file to WpKit theme
+New: Add package-lock.json file for WpKit theme
+Tweak: Updated post rendering in wpkit theme
+Tweak: Update and refine wp_enqueue_script and wp_enqueue_style calls
+Tweak: Adjust footer structure in wpkit theme
+Tweak: Update header template structure in WpKit theme
+Tweak: Refactor page.php in WpKit theme
+Tweak: Update and expand style.css for WpKit theme
+Tweak: Add console.log in frontend.js for test debugging
+Tweak: Update style.scss with theme information and Bootstrap import 
+Update: Upgrade WpKit theme to version 3.0.0 with new dependencies and scripts
+Update: Update new .eslintrc.js file for WpKit theme
+Update: Update .gitignore in WpKit theme
+Update: Update license and restructure readme files in WpKit theme
+Removed: Delete obsolete post content templates in wpkit theme
+Removed: Remove redundant includes and theme support in functions.php
+Removed: Remove redundant 'template-functions.php' from WpKit theme
+Removed: Remove style-editor.css file from WpKit theme
+Removed: Remove style.css file in WpKit theme
+Removed: Delete _theme.scss file in WpKit theme
+Removed: Remove custom template in WpKit theme
+Removed: Remove .gitattributes from WpKit theme
+Removed: Remove CHANGELOG.md from WpKit theme
+Removed: Remove yarn.lock from WpKit theme
