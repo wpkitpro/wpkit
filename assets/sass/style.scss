@@ -1,2 +1,21 @@
-@import 'common/theme';
-@import 'bootstrap';
+/*
+Theme Name: WpKit
+Theme URI: https://wpkit.pro/themes/wpkit/
+Description: WordPress starter theme with Bootstrap CSS/JS and a modern development workflow.
+Author: WpKit
+Author URI: https://wpkit.pro
+Version: 3.0.0
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.3
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: wpkit
+Tags: blog, e-commerce, one-column, custom-background, custom-colors, full-width-template, custom-menu, custom-logo, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+
+WpKit WordPress Theme, (C) 2023 wpkit.pro
+WpKit is distributed under the terms of the GNU GPL.
+*/
+
+$prefix: "wpkit-";
+@import '../../node_modules/bootstrap/scss/bootstrap';
