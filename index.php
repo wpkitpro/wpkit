@@ -4,10 +4,11 @@
  */
 
 get_header();
-
-while ( have_posts() ) {
-	the_post();
-	get_template_part( 'template-parts/content/content' );
-}
-
+?>
+	<?php while ( have_posts() ): ?>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<?php the_content(); ?>
+		</article><!-- #post-<?php the_ID(); ?> -->
+	<?php endwhile; ?>
+<?php
 get_footer();
