@@ -32,6 +32,12 @@ GNU General Public License for more details.
 
 == Changelog ==
 
+= 3.0.1 - 2024-01-22 =
+New: Add new theme.scss file to WpKit theme
+Tweak: Refactor theme setup, styles, and scripts loading in WpKit
+Tweak: Update WPKit theme version and clear extraneous CSS
+Tweak: Update README.md with more detailed theme installation process
+
 = 3.0.0 - 2024-01-21 =
 New: Add .browserslistrc file to WpKit theme
 New: Rearrange JavaScript files and add bootstrap in WpKit theme
