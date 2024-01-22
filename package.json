@@ -3,7 +3,7 @@
 	"slug": "wpkit",
 	"homepage": "https://wpkit.pro",
 	"description": "WordPress starter theme with a modern development workflow",
-	"version": "3.0.1",
+	"version": "3.0.2",
 	"private": true,
 	"scripts": {
 		"build:prod": "grunt default --environment=production && WP_SRC_DIRECTORY=$(pwd) wp-scripts build --env=production",

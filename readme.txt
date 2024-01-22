@@ -32,6 +32,9 @@ GNU General Public License for more details.
 
 == Changelog ==
 
+= 3.0.2 - 2024-01-22 =
+New: Add composer.json to WpKit theme
+
 = 3.0.1 - 2024-01-22 =
 New: Add new theme.scss file to WpKit theme
 Tweak: Refactor theme setup, styles, and scripts loading in WpKit
