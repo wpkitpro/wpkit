@@ -1,15 +1,21 @@
 {
-	"name": "wpkitpro/wpkit",
-	"description": "WordPress starter theme with a modern development workflow",
-	"type": "wordpress-theme",
-	"require": {
-		"squizlabs/php_codesniffer": "3.8.1",
-		"dealerdirect/phpcodesniffer-composer-installer": "1.0.0",
-		"wp-coding-standards/wpcs": "3.0.1"
-	},
-	"config": {
-		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true
-		}
-	}
+    "name": "wpkitpro/wpkit",
+    "description": "WordPress starter theme with a modern development workflow",
+    "type": "wordpress-theme",
+    "require": {
+        "squizlabs/php_codesniffer": "3.8.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "1.0.0",
+        "wp-coding-standards/wpcs": "3.0.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "garikhg"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
 }
